@@ -1,0 +1,53 @@
+# Unreal Engine generated files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Visual Studio
+.vs/
+*.sln
+*.VC.db
+*.VC.VC.opendb
+*.opensdf
+*.opendb
+*.sdf
+*.suo
+*.user
+*.userprefs
+
+# Visual Studio Code / JetBrains
+.vscode/
+.idea/
+
+# Xcode
+*.xcworkspace
+*.xcodeproj
+xcuserdata/
+
+# Unreal generated project files
+*.code-workspace
+
+# Plugin generated files
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Build/debug artifacts
+*.pdb
+*.obj
+*.dll
+*.exe
+*.lib
+*.exp
+*.ilk
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
