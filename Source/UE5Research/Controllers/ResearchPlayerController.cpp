@@ -160,10 +160,10 @@ void AResearchPlayerController::ClientShowMatchResult_Implementation(
         *GetNameSafe(this),
         bIsWinner ? TEXT("WIN") : TEXT("LOSE"));
     
-    if (APlayerCharacter* Character =
+    if (APlayerCharacter* PlayerCharacter =
             Cast<APlayerCharacter>(GetPawn()))
     {
-        Character->SetCombatInputEnabled(false);
+        PlayerCharacter->SetCombatInputEnabled(false);
     }
 
     ShowMatchResult(bIsWinner);
