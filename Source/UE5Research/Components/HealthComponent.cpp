@@ -70,6 +70,8 @@ void UHealthComponent::ApplyDamage(float DamageAmount)
         return;
     }
 
+    const float PreviousHealth = CurrentHealth;
+
     ModifyHealth(-DamageAmount);
     
     UE_LOG(
@@ -80,23 +82,6 @@ void UHealthComponent::ApplyDamage(float DamageAmount)
         MaxHealth,
         CurrentHealth
     );
-
-    if (!bIsDead && CurrentHealth <= 0.0f)
-    {
-        bIsDead = true;
-
-        UE_LOG(
-            LogTemp,
-            Log,
-            TEXT("Death State Changed | Owner:%s | Authority:%s"),
-            *GetNameSafe(GetOwner()),
-            GetOwner() && GetOwner()->HasAuthority()
-                ? TEXT("Server")
-                : TEXT("Client")
-        );
-
-        OnDeath.Broadcast();
-    }
 }
 
 void UHealthComponent::Heal(float HealAmount)
