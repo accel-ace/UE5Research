@@ -13,7 +13,7 @@
 - Xcode 26.4.1
 - Metal / Command Line Tools 26.4.1 (17E188)
   
-※各ツールの取得法はrefarence.mdを参照
+※各ツールの取得先は[Reference](reference.md)を参照
 
 ### UE5導入
 1. Epic Game Launcherをインストール
