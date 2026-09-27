@@ -79,7 +79,7 @@ void UHealthComponent::ApplyDamage(float DamageAmount)
         Log,
         TEXT("Health Changed | Owner:%s | Previous:%.1f | Current:%.1f"),
         *GetNameSafe(GetOwner()),
-        MaxHealth,
+        PreviousHealth,
         CurrentHealth
     );
 }
