@@ -11,7 +11,7 @@ BlueprintとC++の連携、Gameplay Framework、Replication、セッション管
 
 
 ## 環境構築
-環境構築の詳細は `docs/setup.md` を参照
+環境構築の詳細は[Setup Guide](docs/setup.md) を参照してください。
 
 ## Investigation Scope
 

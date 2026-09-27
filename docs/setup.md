@@ -35,12 +35,9 @@ sudo xcode-select -s /Applications/Xcode.app
 ## リポジトリ取得
 
 ```bash
-git clone https://github.com/StudyYasui/ue5-research.git
-cd ue5-research
-
-Git LFSを初期化し、アセットを取得します。
-
 git lfs install
+git clone https://github.com/accel-ace/UE5Research.git
+cd UE5Research
 git lfs pull
 ```
 
